@@ -13,7 +13,7 @@
                 <img src="assets/img/council/<?php echo $row['image']?>" class="rounded-circle flex-shrink-0" alt=""><div class="social-links">
                 <div class="author-details">
                     <h4 class="author-name"><?php echo $row['Name']?></h4>
-                    <h5 class="author-position"><?php echo $row['positon']?></h5>
+                    <h5 class="author-position"><?php echo $row['position']?></h5>
                     <p><?php echo $row['aboutus']?></p>
                     <a href="https://x.com/#"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>

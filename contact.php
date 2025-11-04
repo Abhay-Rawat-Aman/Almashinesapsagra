@@ -105,7 +105,7 @@
     include 'includes/script.php';
   ?>
 	<script>
-    createPageTitle("Alumni Council", "assets/img/contact-page-title-bg.jpg");
+    createPageTitle("Contact Us", "assets/img/contact-page-title-bg.jpg");
   </script>
 </body>
 

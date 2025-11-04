@@ -80,7 +80,7 @@
     include 'includes/script.php';
   ?>
 	<script>
-    	createPageTitle("Alumni Council", "assets/img/contact-page-title-bg.jpg");
+    	createPageTitle("Alumni Login", "assets/img/contact-page-title-bg.jpg");
  	</script>
 </body>
 

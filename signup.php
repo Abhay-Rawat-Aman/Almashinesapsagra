@@ -53,7 +53,7 @@
     include 'includes/script.php';
   ?>
 	<script>
-    createPageTitle("Alumni Council", "assets/img/contact-page-title-bg.jpg");
+    createPageTitle("Alumni Registration", "assets/img/contact-page-title-bg.jpg");
   </script>
 </body>
 

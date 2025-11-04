@@ -40,7 +40,7 @@
     include 'includes/script.php';
   ?>
 	<script>
-    createPageTitle("Alumni Council", "assets/img/team-page-title-bg.jpg");
+    createPageTitle("Our Team", "assets/img/team-page-title-bg.jpg");
   </script>
 
 </body>
