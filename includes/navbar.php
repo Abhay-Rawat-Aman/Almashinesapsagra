@@ -14,7 +14,6 @@
           <li><a href="council.php">Alumni Council</a></li>
           <li><a href="team.php">Teams</a></li>
           <li><a href="contact.php">Contact Us</a></li>
-          <li><a href="newtab.php">New Tab</li>
           <li><a href="signup.php" class="btn-get-started" style='padding-right:30px'>Signup</a></li>
           <li><a href="login.php" class="btn-get-started" style='padding-right:30px'>Login</a></li>
         </ul>
