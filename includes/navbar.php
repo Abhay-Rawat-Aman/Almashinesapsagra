@@ -45,6 +45,7 @@
           <li class="dropdown"><a href="#"><span>SignUp </span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="signup.php">Alumni SignUp</a></li>
+              <li><a href="tempsignup.php">Temp Alumni SignUp</a></li>
               <li><a href="#">Teacher SignUp</a></li>
             </ul>
           </li>
