@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $state       = $_POST['state'] ?? '';
     $city        = $_POST['city'] ?? '';
     $zip         = $_POST['zip'] ?? '';
+    $classAndSec = $_POST['classAndSec'] ?? '';
 	
 	
 	$sql = "Select count(*) as total from alumni_contact where email = ?";
@@ -65,11 +66,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $sql_basic = "INSERT INTO alumni_basic 
-    (alumni_id, first_name, middle_name, last_name, dob, gender, profile_photo, passing_year, stream, career_path)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    (alumni_id, first_name, middle_name, last_name, dob, gender, profile_photo, passing_year, ClassAndSection, stream, career_path)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn->prepare($sql_basic);
-    $stmt->bind_param("ssssssssss", $alumni_id, $first_name, $middle_name, $last_name, $dob, $gender, $profile_photo, $passingYear, $stream,  $careerPath);
+    $stmt->bind_param("sssssssssss", $alumni_id, $first_name, $middle_name, $last_name, $dob, $gender, $profile_photo, $passingYear, $classAndSec ,$stream,  $careerPath);
     $stmt->execute();
 
     

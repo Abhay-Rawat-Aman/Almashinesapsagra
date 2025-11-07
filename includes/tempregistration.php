@@ -51,10 +51,21 @@
       <label for="stream" class="form-label">Stream <span class="text-danger">*</span></label>
       <select id="stream" name="stream" class="form-select" required>
         <option value="">Select Stream</option>
-        <option>PCM</option>
-        <option>PCB</option>
-        <option>Commerce</option>
-        <option>Arts</option>
+        <option value="PCM">PCM</option>
+        <option value="PCB">PCB</option>
+        <option value="PCM"value="Commerce">Commerce</option>
+        <option values="Arts">Arts</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label for="stream" class="form-label">Class & Sec<span class="text-danger">*</span></label>
+      <select id="stream" name="classAndSec" class="form-select" required>
+        <option value="">Select Class & Sec</option>
+        <option value="XIIA">XII A</option>
+        <option value="XIIB">XII B</option>
+        <option value="XIIC">XII C</option>
+        <option value="XIID">XII D</option>
       </select>
     </div>
 
