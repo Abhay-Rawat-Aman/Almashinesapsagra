@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $state       = $_POST['state'] ?? '';
     $city        = $_POST['city'] ?? '';
     $zip         = $_POST['zip'] ?? '';
+    $classAndSec = $_POST['classAndSec'] ?? '';
 	
 	
     $sql = "SELECT count(*) as total FROM alumni_basic WHERE admission_year = ?";
@@ -91,11 +92,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $sql_basic = "INSERT INTO alumni_basic 
-    (alumni_id, first_name, middle_name, last_name, dob, gender, profile_photo, admission_year, passing_year, stream, marksheet_file, career_path)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    (alumni_id, first_name, middle_name, last_name, dob, gender, profile_photo, admission_year, passing_year, ClassAndSection, stream, marksheet_file, career_path)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn->prepare($sql_basic);
-    $stmt->bind_param("ssssssssssss", $alumni_id, $first_name, $middle_name, $last_name, $dob, $gender, $profile_photo, $admissionNo, $passingYear, $stream, $marksheet, $careerPath);
+    $stmt->bind_param("sssssssssssss", $alumni_id, $first_name, $middle_name, $last_name, $dob, $gender, $profile_photo, $admissionNo, $passingYear,$classAndSec ,$stream, $marksheet, $careerPath);
     $stmt->execute();
 
     
@@ -189,22 +190,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // ===== FINAL ALERT =====
     echo "
     <script>
-      alert('Form Submitted Successfully!\\n\\n' +
-        'Name: {$first_name} {$middle_name} {$last_name}\\n' +
-        'DOB: {$dob}\\n' +
-        'Gender: {$gender}\\n' +
-        'Admission No: {$admissionNo}\\n' +
-        'Passing Year: {$passingYear}\\n' +
-        'Stream: {$stream}\\n' +
-        'Career Path: {$careerPath}{$careerExtra}\\n' +
-        'Email: {$email}\\n' +
-        'Phone: {$phone}\\n' +
-        'Address: {$address1}, {$address2}, {$city}, {$state}, {$country} - {$zip}\\n' +
-        'Profile Photo: {$profile_photo}\\n' +
-        'Marksheet: {$marksheet}\\n' +
-        'Higher Education: {$eduText}'
-      );
-      
       alert('Thank you for registering as an alumni! Your profile will be reviewed shortly.');
       window.location.href='index.php';
     </script>

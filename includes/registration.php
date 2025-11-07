@@ -68,6 +68,18 @@
       <input type="file" id="marksheet" name="marksheet" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
     </div>
 
+    <div class="col-md-6">
+      <label for="stream" class="form-label">Class & Sec<span class="text-danger">*</span></label>
+      <select id="stream" name="classAndSec" class="form-select" required>
+        <option value="">Select Class & Sec</option>
+        <option value="XIIA">XII A</option>
+        <option value="XIIB">XII B</option>
+        <option value="XIIC">XII C</option>
+        <option value="XIID">XII D</option>
+      </select>
+    </div>
+
+
    
     <!-- ================= HIGHER EDUCATION ================= -->
     <div class="col-md-12 mt-4">
