@@ -52,7 +52,7 @@
           <li class="dropdown"><a href="#"><span>Login </span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="login.php">Alumni Login</a></li>
-              <li><a href="#">Admin Login</a></li>
+              <li><a href="admin/login.php">Admin Login</a></li>
               <li><a href="#">Teacher Login</a></li>
             </ul>
           </li>
